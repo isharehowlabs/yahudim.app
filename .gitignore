@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+api/node_modules/
+
+# Build outputs
+dist/
+
+# Environment variables
+.env
+api/.env
+
+# Database files
+api/data.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Backup files
+*.old
+*.bak
+*.backup
+*~
+*.orig
+
+# Don't include built assets in root (they're in dist/)
+/assets/
+/index.html
+/vite.svg
+
+# Keep source and config
+!src/
+!public/
+src/index.generated.css
