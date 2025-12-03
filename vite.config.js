@@ -11,15 +11,17 @@ export default defineConfig({
     devSourcemap: true,
   },
   server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3001',
-        changeOrigin: true,
-      },
-      '/health': {
-        target: 'http://localhost:3001',
-        changeOrigin: true,
-      }
-    }
+    port: 3000,
+    // Remove proxy when connecting to remote backend
+    // proxy: {
+    //   '/api': {
+    //     target: 'http://localhost:3001',
+    //     changeOrigin: true,
+    //   },
+    //   '/health': {
+    //     target: 'http://localhost:3001',
+    //     changeOrigin: true,
+    //   }
+    // }
   }
 })

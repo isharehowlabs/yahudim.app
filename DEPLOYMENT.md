@@ -1,5 +1,27 @@
 # Deployment Guide
 
+**Important:** Always run build and deploy commands from the project root directory:
+
+```sh
+cd /home/ishaglcy/public_html/yeladim.church
+```
+
+To build the frontend, use:
+
+```sh
+npm run build
+```
+
+To deploy, use:
+
+```sh
+npm run deploy
+```
+
+If deploying on a platform (e.g., Render), set the working directory to `/home/ishaglcy/public_html/yeladim.church` and the build command to `npm run build`.
+
+Your `index.html` must be present in the project root for Vite to build successfully.
+
 This guide explains how to deploy the Children's Church application with the backend API.
 
 ## Architecture

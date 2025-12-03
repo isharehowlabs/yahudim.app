@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Always run from the script's directory (project root)
+cd "$(dirname "$0")"
+
 # Build and Deploy Script
 # Clears old build files, builds new ones, deploys to server, then handles git operations
 

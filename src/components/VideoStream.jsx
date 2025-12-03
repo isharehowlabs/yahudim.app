@@ -55,7 +55,7 @@ export default function VideoStream() {
 
   return (
     <div className="w-full">
-      <form onSubmit={handleSubmit} className="mb-4 bg-gradient-to-r from-purple-50 to-yellow-50 p-3 sm:p-4 md:p-6 rounded-lg shadow-lg border-2 border-purple-200">
+      <form onSubmit={handleSubmit} classNameName="mb-4 bg-gradient-to-r from-purple-50 to-yellow-50 p-3 sm:p-4 md:p-6 rounded-lg shadow-lg border-2 border-purple-200">
         <div className="flex gap-3 sm:gap-4 md:gap-6 flex-col md:flex-row md:items-end">
           <div className="flex-1 min-w-0">
             <label className="block text-sm md:text-base font-medium text-gray-700 mb-2">
@@ -85,7 +85,7 @@ export default function VideoStream() {
           <div className="relative w-full aspect-video">
             <iframe
               src={embedUrl}
-              className="absolute inset-0 w-full h-full rounded-lg shadow-lg border-2 border-purple-200"
+                classNameName="absolute inset-0 w-full h-full rounded-lg shadow-lg border-2 border-purple-200"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="Stream Video"

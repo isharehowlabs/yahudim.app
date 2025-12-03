@@ -104,7 +104,7 @@ function QandA() {
       <div className="flex gap-2 mb-6 bg-white p-2 rounded-lg shadow-md border-2 border-orange-200">
         <button
           onClick={() => setMode('viewer')}
-          className={`flex-1 py-2 px-4 rounded-lg font-semibold transition-all ${
+            className={`flex-1 py-2 px-4 rounded-lg font-semibold transition-all ${
             mode === 'viewer'
               ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-md'
               : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
@@ -114,7 +114,7 @@ function QandA() {
         </button>
         <button
           onClick={() => setMode('host')}
-          className={`flex-1 py-2 px-4 rounded-lg font-semibold transition-all ${
+            className={`flex-1 py-2 px-4 rounded-lg font-semibold transition-all ${
             mode === 'host'
               ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-md'
               : 'bg-gray-100 text-gray-600 hover:bg-gray-200'

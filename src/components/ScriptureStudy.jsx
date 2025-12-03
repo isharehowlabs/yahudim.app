@@ -87,7 +87,7 @@ function ScriptureStudy() {
       await loadNotes();
       resetNoteForm();
     } catch (err) {
-      alert(err.message);
+        <div className="bg-white rounded-lg shadow-md p-4 lg:p-6 border-2 border-purple-200" className="className">
     }
   };
 
