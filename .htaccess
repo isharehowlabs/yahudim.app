@@ -1,5 +1,5 @@
 # Set correct MIME types
-AddType application/javascript .js .mjs
+AddType application/javascript .js .mjs .jsx
 AddType text/css .css
 AddType image/svg+xml .svg
 

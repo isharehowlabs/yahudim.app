@@ -1,10 +1,18 @@
 {
   "manifest_version": 3,
   "name": "Yahudim App Extension",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Chrome extension for Yahudim App.",
+  "icons": {
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
   },
   "permissions": [],
   "host_permissions": [
