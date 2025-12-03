@@ -17,6 +17,6 @@
     "https://yeladim.church/*"
   ],
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'"
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com; object-src 'self'; connect-src 'self' ws://localhost:3000"
   }
 }
