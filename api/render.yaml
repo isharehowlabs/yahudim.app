@@ -1,8 +1,9 @@
 services:
   - type: web
-    name: yeladim-church-api
+    name: yahudim-app-api
     env: node
-    buildCommand: npm run build
+    rootDir: api
+    buildCommand: npm install
     startCommand: npm start
     envVars:
       - key: NODE_ENV
@@ -10,4 +11,4 @@ services:
       - key: PORT
         value: 10000
       - key: CORS_ORIGIN
-        value: https://yeladim.church
+        value: https://yahudim.app
