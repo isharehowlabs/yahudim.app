@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001'\;
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001';
 
 function ScriptureStudy() {
   // Verse reader state
@@ -87,7 +87,7 @@ function ScriptureStudy() {
       await loadNotes();
       resetNoteForm();
     } catch (err) {
-        <div className="bg-white rounded-lg shadow-md p-4 lg:p-6 border-2 border-purple-200" className="className">
+      setError(err.message || 'Failed to save note');
     }
   };
 
