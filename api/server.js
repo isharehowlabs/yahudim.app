@@ -19,7 +19,7 @@ app.use(express.json());
 
 // Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', message: 'Children\'s Church API is running' });
+  res.json({ status: 'ok', message: 'Rise Yahudim API is running' });
 });
 
 // ===== Q&A ENDPOINTS =====
@@ -230,7 +230,7 @@ app.delete('/api/notes/:id', (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`🙏 Children's Church API running on port ${PORT}`);
+  console.log(`🙏 Rise Yahudim API running on port ${PORT}`);
   console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`CORS enabled for: ${allowedOrigins.join(', ')}`);
 });

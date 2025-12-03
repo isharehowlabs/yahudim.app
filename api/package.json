@@ -1,14 +1,14 @@
 {
-  "name": "yeladim-church-api",
+  "name": "rise-yahudim-api",
   "version": "1.0.0",
-  "description": "Backend API for Children's Church App",
+  "description": "Backend API for Rise Yahudim App",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
     "build": "npm install"
   },
-  "keywords": ["express", "api", "church"],
+  "keywords": ["express", "api", "yahudim"],
   "author": "",
   "license": "MIT",
   "dependencies": {

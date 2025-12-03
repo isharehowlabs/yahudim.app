@@ -14,7 +14,7 @@
 
 1. CREATE GITHUB REPOSITORY (5 min)
    - Go to: https://github.com/new
-   - Repository name: yeladim-church
+   - Repository name: rise-yahudim
    - Visibility: Public or Private (your choice)
    - Do NOT add README, .gitignore, or license
    - Click "Create repository"
@@ -22,8 +22,8 @@
 2. PUSH TO GITHUB (1 min)
    Run these commands (replace YOUR_USERNAME):
 
-   cd /home/ishaglcy/public_html/yeladim.church
-   git remote add origin https://github.com/YOUR_USERNAME/yeladim-church.git
+   cd /home/ishaglcy/public_html/yahudim.app
+   git remote add origin https://github.com/YOUR_USERNAME/rise-yahudim.git
    git push -u origin main
 
    (Use Personal Access Token as password, not account password)
@@ -34,12 +34,12 @@
    - Connect your GitHub repo
    - Root Directory: api
    - Environment: Node
-   - Add env vars: NODE_ENV=production, CORS_ORIGIN=https://yeladim.church
+   - Add env vars: NODE_ENV=production, CORS_ORIGIN=https://yahudim.app
    - Deploy!
 
 4. GET YOUR API URL
    Render will give you a URL like:
-   https://yeladim-church-api.onrender.com
+   https://rise-yahudim-api.onrender.com
 
 5. TELL ME YOUR API URL
    I'll update the frontend to use it!
@@ -53,5 +53,5 @@
 🆘 NEED HELP?
   Read GITHUB_SETUP.md for detailed instructions!
 
-Current directory: /home/ishaglcy/public_html/yeladim.church
+Current directory: /home/ishaglcy/public_html/yahudim.app
 Ready to push? Run: cat GITHUB_SETUP.md

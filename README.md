@@ -1,6 +1,6 @@
-# Children's Church Streaming App 🙏
+# Rise Yahudim Streaming App 🙏
 
-A React application for children's church that enables streaming via YouTube or Discord, with interactive features for learning and engagement.
+A React application for Rise Yahudim that enables streaming via YouTube or Discord, with interactive features for learning and engagement.
 
 ## Features
 
@@ -116,4 +116,4 @@ Modern browsers with support for:
 
 ## License
 
-Created for Yeladim Church with ❤️
+Created for Rise Yahudim with ❤️

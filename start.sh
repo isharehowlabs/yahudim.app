@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "🙏 Starting Children's Church App..."
+echo "🙏 Starting Rise Yahudim App..."
 echo ""
 echo "📺 Features:"
 echo "  - Video streaming (YouTube/Discord)"
-echo "  - Drawing pad for children"
+echo "  - Drawing pad for Rise Yahudim"
 echo "  - Interactive quiz system"
 echo "  - Scripture lesson notebook"
 echo ""

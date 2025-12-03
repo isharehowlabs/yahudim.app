@@ -3,7 +3,7 @@
 **Important:** Always run build and deploy commands from the project root directory:
 
 ```sh
-cd /home/ishaglcy/public_html/yeladim.church
+cd /home/ishaglcy/public_html/yahudim.app
 ```
 
 To build the frontend, use:
@@ -18,11 +18,11 @@ To deploy, use:
 npm run deploy
 ```
 
-If deploying on a platform (e.g., Render), set the working directory to `/home/ishaglcy/public_html/yeladim.church` and the build command to `npm run build`.
+If deploying on a platform (e.g., Render), set the working directory to `/home/ishaglcy/public_html/yahudim.app` and the build command to `npm run build`.
 
 Your `index.html` must be present in the project root for Vite to build successfully.
 
-This guide explains how to deploy the Children's Church application with the backend API.
+This guide explains how to deploy the Rise Yahudim application with the backend API.
 
 ## Architecture
 
@@ -34,7 +34,7 @@ This guide explains how to deploy the Children's Church application with the bac
 
 1. Navigate to the API directory:
    ```bash
-   cd /home/ishaglcy/public_html/yeladim.church/api
+   cd /home/ishaglcy/public_html/yahudim.app/api
    ```
 
 2. Create a `.env` file from the example:
@@ -46,7 +46,7 @@ This guide explains how to deploy the Children's Church application with the bac
    ```env
    PORT=3001
    NODE_ENV=production
-   CORS_ORIGIN=https://yeladim.church
+   CORS_ORIGIN=https://yahudim.app
    ```
 
 4. Install dependencies (if not already done):
@@ -61,7 +61,7 @@ This guide explains how to deploy the Children's Church application with the bac
 
    Or use a process manager like PM2 for production:
    ```bash
-   pm2 start server.js --name yeladim-api
+   pm2 start server.js --name rise-yahudim-api
    pm2 save
    pm2 startup
    ```
@@ -70,7 +70,7 @@ This guide explains how to deploy the Children's Church application with the bac
 
 1. Navigate to the project root:
    ```bash
-   cd /home/ishaglcy/public_html/yeladim.church
+   cd /home/ishaglcy/public_html/yahudim.app
    ```
 
 2. Install dependencies:
@@ -93,8 +93,8 @@ Add to your virtual host configuration:
 
 ```apache
 <VirtualHost *:443>
-    ServerName yeladim.church
-    DocumentRoot /home/ishaglcy/public_html/yeladim.church/dist
+    ServerName yahudim.app
+    DocumentRoot /home/ishaglcy/public_html/yahudim.app/dist
 
     # Proxy API requests to backend
     ProxyPass /api http://localhost:3001/api
@@ -104,7 +104,7 @@ Add to your virtual host configuration:
     ProxyPassReverse /health http://localhost:3001/health
 
     # Serve React app for all other routes
-    <Directory /home/ishaglcy/public_html/yeladim.church/dist>
+    <Directory /home/ishaglcy/public_html/yahudim.app/dist>
         Options -Indexes +FollowSymLinks
         AllowOverride All
         Require all granted
@@ -129,12 +129,12 @@ Add to your virtual host configuration:
 ```nginx
 server {
     listen 443 ssl http2;
-    server_name yeladim.church;
+    server_name yahudim.app;
 
     ssl_certificate /path/to/cert.pem;
     ssl_certificate_key /path/to/key.pem;
 
-    root /home/ishaglcy/public_html/yeladim.church/dist;
+    root /home/ishaglcy/public_html/yahudim.app/dist;
     index index.html;
 
     # API proxy
@@ -173,7 +173,7 @@ server {
 
 3. Visit the site:
    ```
-   https://yeladim.church
+   https://yahudim.app
    ```
 
 ## Development Mode

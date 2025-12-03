@@ -9,26 +9,26 @@ Failed to load module script: Expected a JavaScript module script but the server
 ```
 
 ### Root Cause
-- You're accessing the site through Apache (https://yeladim.church) but haven't deployed the production build
+- You're accessing the site through Apache (https://yahudim.app) but haven't deployed the production build
 - OR the JavaScript files don't have proper MIME type configuration
 
 ### Solution
 
 1. **Deploy the production build** (if not done):
    ```bash
-   cd /home/ishaglcy/public_html/yeladim.church
+   cd /home/ishaglcy/public_html/yahudim.app
    ./deploy.sh
    ```
 
 2. **Verify .htaccess is in place**:
    ```bash
-   ls -la /home/ishaglcy/public_html/yeladim.church/.htaccess
+   ls -la /home/ishaglcy/public_html/yahudim.app/.htaccess
    ```
 
 3. **Check file permissions**:
    ```bash
-   ls -la /home/ishaglcy/public_html/yeladim.church/index.html
-   ls -la /home/ishaglcy/public_html/yeladim.church/assets/
+   ls -la /home/ishaglcy/public_html/yahudim.app/index.html
+   ls -la /home/ishaglcy/public_html/yahudim.app/assets/
    ```
    
    Files should be owned by `ishaglcy:ishaglcy` with:
@@ -38,7 +38,7 @@ Failed to load module script: Expected a JavaScript module script but the server
 
 4. **Fix permissions if needed**:
    ```bash
-   cd /home/ishaglcy/public_html/yeladim.church
+   cd /home/ishaglcy/public_html/yahudim.app
    chown -R ishaglcy:ishaglcy index.html assets .htaccess vite.svg
    chmod 644 index.html .htaccess vite.svg
    chmod 755 assets
@@ -60,7 +60,7 @@ npm run dev
 ### For Production (Live Site)
 ```bash
 ./deploy.sh
-# Access at: https://yeladim.church
+# Access at: https://yahudim.app
 ```
 
 **Important**: Don't access the live site URL while running `npm run dev` - they serve different things!
@@ -86,7 +86,7 @@ npm run build
 ### Assets Not Loading (404 errors)
 ```bash
 # Verify files exist
-ls -la /home/ishaglcy/public_html/yeladim.church/assets/
+ls -la /home/ishaglcy/public_html/yahudim.app/assets/
 
 # Redeploy
 ./deploy.sh
@@ -107,19 +107,19 @@ systemctl restart apache2
 
 ### Check if site is accessible:
 ```bash
-curl -I https://yeladim.church/
+curl -I https://yahudim.app/
 ```
 
 ### Check JavaScript MIME type:
 ```bash
-curl -I https://yeladim.church/assets/index-*.js | grep Content-Type
+curl -I https://yahudim.app/assets/index-*.js | grep Content-Type
 ```
 
 Should return: `Content-Type: application/javascript`
 
 ### Check deployment structure:
 ```bash
-ls -la /home/ishaglcy/public_html/yeladim.church/ | grep -E '(index|assets|htaccess)'
+ls -la /home/ishaglcy/public_html/yahudim.app/ | grep -E '(index|assets|htaccess)'
 ```
 
 ---
@@ -128,7 +128,7 @@ ls -la /home/ishaglcy/public_html/yeladim.church/ | grep -E '(index|assets|htacc
 
 If anything goes wrong, you can always redeploy:
 ```bash
-cd /home/ishaglcy/public_html/yeladim.church
+cd /home/ishaglcy/public_html/yahudim.app
 ./deploy.sh
 ```
 

@@ -1,6 +1,6 @@
-# Children's Church API
+# Rise Yahudim API
 
-Backend API for the Children's Church streaming application.
+Backend API for the Rise Yahudim streaming application.
 
 ## Features
 
@@ -62,7 +62,7 @@ The API will run on `http://localhost:3001`
 Set these in the Render dashboard:
 - `NODE_ENV`: production
 - `PORT`: 10000 (default)
-- `CORS_ORIGIN`: https://yeladim.church
+- `CORS_ORIGIN`: https://yahudim.app
 
 ## Data Storage
 

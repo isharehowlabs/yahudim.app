@@ -1,6 +1,6 @@
 # API Deployment Guide
 
-The Children's Church app now has a backend API that you can deploy to Render.com.
+The Rise Yahudim app now has a backend API that you can deploy to Render.com.
 
 ## What the API Does
 
@@ -15,7 +15,7 @@ The Children's Church app now has a backend API that you can deploy to Render.co
 
 1. Initialize git (if not already done):
 ```bash
-cd /home/ishaglcy/public_html/yeladim.church
+cd /home/ishaglcy/public_html/yahudim.app
 git init
 git add .
 git commit -m "Initial commit with API"
@@ -24,7 +24,7 @@ git commit -m "Initial commit with API"
 2. Push to GitHub:
 ```bash
 # Create a repository on GitHub first, then:
-git remote add origin https://github.com/YOUR_USERNAME/yeladim-church.git
+git remote add origin https://github.com/YOUR_USERNAME/rise-yahudim.git
 git branch -M main
 git push -u origin main
 ```
@@ -35,7 +35,7 @@ git push -u origin main
 2. Click "New +" and select "Web Service"
 3. Connect your GitHub account and select your repository
 4. Configure the service:
-   - **Name**: yeladim-church-api
+   - **Name**: rise-yahudim-api
    - **Root Directory**: api
    - **Environment**: Node
    - **Build Command**: npm install
@@ -44,7 +44,7 @@ git push -u origin main
 
 5. Add environment variables:
    - `NODE_ENV`: production
-   - `CORS_ORIGIN`: https://yeladim.church
+   - `CORS_ORIGIN`: https://yahudim.app
 
 6. Click "Create Web Service"
 
@@ -52,7 +52,7 @@ git push -u origin main
 
 Once deployed, Render will give you a URL like:
 ```
-https://yeladim-church-api.onrender.com
+https://rise-yahudim-api.onrender.com
 ```
 
 ### Step 4: Update Frontend
@@ -60,7 +60,7 @@ https://yeladim-church-api.onrender.com
 Update the frontend to use your API. Create an `.env` file in the root:
 
 ```bash
-VITE_API_URL=https://yeladim-church-api.onrender.com
+VITE_API_URL=https://rise-yahudim-api.onrender.com
 ```
 
 Then rebuild and redeploy your frontend:

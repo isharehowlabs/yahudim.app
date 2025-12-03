@@ -51,7 +51,7 @@ chmod 644 assets/* 2>/dev/null
 
 echo "✅ Deployment complete!"
 echo ""
-echo "🌐 Your app is now live at: https://yeladim.church"
+echo "🌐 Your app is now live at: https://yahudim.app"
 echo ""
 echo "Backend API status:"
 curl -s http://localhost:3001/health

@@ -9,8 +9,8 @@ Your git repository is initialized and ready to push! Follow these steps to get 
 3. Click the "+" icon in the top right
 4. Select "New repository"
 5. Fill in the details:
-   - **Repository name**: `yeladim-church`
-   - **Description**: "Children's Church streaming app with interactive features"
+   - **Repository name**: `rise-yahudim`
+   - **Description**: "Rise Yahudim streaming app with interactive features"
    - **Visibility**: Choose Public or Private (your choice)
    - **Do NOT** initialize with README, .gitignore, or license (we already have these)
 6. Click "Create repository"
@@ -20,10 +20,10 @@ Your git repository is initialized and ready to push! Follow these steps to get 
 After creating the repository, GitHub will show you commands. Use these:
 
 ```bash
-cd /home/ishaglcy/public_html/yeladim.church
+cd /home/ishaglcy/public_html/yahudim.app
 
 # Add the GitHub remote (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/yeladim-church.git
+git remote add origin https://github.com/YOUR_USERNAME/rise-yahudim.git
 
 # Push your code
 git push -u origin main
@@ -38,7 +38,7 @@ git push -u origin main
 If you need to create a token:
 1. Go to GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)
 2. Click "Generate new token (classic)"
-3. Give it a name like "Yeladim Church Deploy"
+3. Give it a name like "Rise Yahudim Deploy"
 4. Select scopes: `repo` (full control of private repositories)
 5. Click "Generate token"
 6. **Copy the token immediately** (you won't see it again)
@@ -59,9 +59,9 @@ Now that your code is on GitHub:
 2. Sign up/login (can use GitHub account)
 3. Click "New +" → "Web Service"
 4. Click "Connect account" to link GitHub
-5. Find and select your `yeladim-church` repository
+5. Find and select your `rise-yahudim` repository
 6. Configure the service:
-   - **Name**: `yeladim-church-api`
+   - **Name**: `rise-yahudim-api`
    - **Root Directory**: `api`
    - **Environment**: Node
    - **Build Command**: `npm install`
@@ -72,7 +72,7 @@ Now that your code is on GitHub:
    - Click "Advanced" → "Add Environment Variable"
    - Add these variables:
      - `NODE_ENV` = `production`
-     - `CORS_ORIGIN` = `https://yeladim.church`
+     - `CORS_ORIGIN` = `https://yahudim.app`
 
 8. Click "Create Web Service"
 
@@ -82,7 +82,7 @@ Render will:
 1. Clone your repository
 2. Install dependencies
 3. Start the server
-4. Give you a URL like: `https://yeladim-church-api.onrender.com`
+4. Give you a URL like: `https://rise-yahudim-api.onrender.com`
 
 This takes 2-5 minutes. Watch the logs in the Render dashboard.
 
@@ -94,7 +94,7 @@ Once deployed, test it:
 # Health check
 curl https://your-api-url.onrender.com/health
 
-# Should return: {"status":"ok","message":"Children's Church API is running"}
+# Should return: {"status":"ok","message":"Rise Yahudim API is running"}
 ```
 
 ## Step 7: Update Frontend (Next)

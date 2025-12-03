@@ -18,8 +18,8 @@ else
     fi
     
     echo ""
-    echo "Adding remote: https://github.com/$username/yeladim-church.git"
-    git remote add origin "https://github.com/$username/yeladim-church.git"
+    echo "Adding remote: https://github.com/$username/rise-yahudim.git"
+    git remote add origin "https://github.com/$username/rise-yahudim.git"
     
     echo "✅ Remote added!"
 fi

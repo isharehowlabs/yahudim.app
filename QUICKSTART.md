@@ -12,7 +12,7 @@
    ```bash
    ./deploy.sh
    ```
-   Access at: https://yeladim.church
+   Access at: https://yahudim.app
 
 ## How to Use
 
